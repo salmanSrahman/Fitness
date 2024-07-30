@@ -435,6 +435,121 @@ nav ul .bar{
        
 }
 /* run extra mile responsive end */
+.BMI_calc_inner{
+    background: var(--primary);
+    padding: 49px 0;
+    margin-top: 58px;
+}
+
+.BMI_calc_container{
+    display: flex;
+    column-gap: 75px;
+}
+
+.BMI_chart{
+    width: 40%;
+}
+.BMI_chart table{
+   text-align: left;
+   width: 90%;
+    
+}
+.BMI_chart table, td, th{
+    padding: 15px 18px;
+    font-size: 14px;
+    color:var(--secondary);
+    border: 1px solid rgba(255, 255, 255, 10%);
+    border-collapse: collapse;
+
+}
+
+
+.BMI_calc{
+    width: 60%;
+   
+}
+.BMI_calc_title{
+    font-size: 28px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 14px;
+
+}
+.BMI_calc p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary);
+    margin-bottom: 34px;
+    width: 547px;
+}
+
+.BMI_form .seperate_input{
+    display: flex;
+    column-gap: 12px;
+}
+.BMI_form .activity_input{
+   width: 100%;
+   display: block;
+}
+.BMI_form input{
+    padding: 13px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 49%;
+    background: #383838;
+    border: 1px solid transparent;
+    margin: 8px 0;
+    
+}.BMI_form input:nth-child(5){
+    width: 100%;
+}
+.BMI_form input::placeholder{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 60%)
+    
+}
+.BMI_form input[type="submit"]{
+    border: 0;
+    cursor: pointer;
+}
+.BMI_form input[type="submit"]:focus{
+    border: 0;
+    outline: 0;
+}
+.BMI_form input:focus{
+    outline: 0;
+    border: 1px solid var(--secondary)
+}
+/* BMI Calculator part end */
+
+@media screen and (max-width: 575px){
+    .BMI_calc_container{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    
+    .BMI_chart{
+        width: 100%;
+    }
+    
+    .BMI_calc{
+        width: 100%
+    }
+    .BMI_calc_title{
+        font-size: 20px;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 14px;
+    
+    }
+
+   
+    .BMI_calc p{
+        width: auto;
+    }
+
+}
+/* bmi calculator responsive end */
 
 .team_container{
     display: flex;
