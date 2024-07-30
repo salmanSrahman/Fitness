@@ -119,10 +119,11 @@ nav ul .bar{
       
    
     .btn_primary{
-        padding: 16px 30px;
-        font-size: 16px;
+        padding: 14px 20px;
+        font-size: 14px;
        
     }
+
 
     nav ul li{
         display: none;
@@ -291,8 +292,8 @@ nav ul .bar{
         column-gap: 14px;
     }
     .btn_dwnload{
-        padding: 16px 20px;
-        font-size: 16px;
+        padding: 14px 20px;
+        font-size: 14px;
     }
     
 }
@@ -488,6 +489,122 @@ nav ul .bar{
     }
 }
 /* responsive our team */
+.member_card_part{
+    display: flex;
+    column-gap: 30px;
+}
+
+.member_card {
+    width: 32.50%;
+    background: #000;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 50px;
+    overflow: hidden;
+    transition: all linear 0.3s;
+    
+
+}
+
+.member_card h3 {
+    padding: 15px 0;
+    background: #dddddd;
+    color: var(--primary);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all linear 0.3s;
+   
+}
+
+.member_card h2 {
+    padding: 20px 0;
+    color: #fff;
+    font-size: 29px;
+    font-weight: 700;
+    position: relative;
+    z-index: 999;
+    transition: all linear 0.3s;
+   
+}
+
+.member_card h2 span {
+    font-size: 35px;
+}
+
+.member_card h2::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.member_card ul {
+    padding: 20px 0;
+    background: #f1f1f1;
+}
+
+.member_card ul li {
+    color: #444444;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-bottom: 27px;
+}
+
+.member_card ul li:last-child {
+    padding-bottom: 0;
+
+}
+
+.member_card a {
+    padding: 10px 0;
+    width: 100%;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #dddddd;
+    transition: all linear 0.3s;
+   
+}
+
+.member_card:hover a {
+    background: #e23e38;
+    color: #fff;
+}
+
+.member_card:hover h3 {
+    background: #e23e38;
+    color: #fff;
+}
+
+.member_card:hover {
+    box-shadow: 1px 5px 22px 4px rgba(0, 0, 0, 0.4);
+}
+
+.member_card:hover h2 {
+    transform: scale(1.1);
+   
+}
+/* membership part end */
+
+
+@media screen and (max-width: 575px) {
+    .member_card_part{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    
+    .member_card {
+        width: 100%;
+    }
+}
+/* membership responsive end */
 
 
 
