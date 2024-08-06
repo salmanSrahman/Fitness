@@ -477,6 +477,7 @@ nav ul .bar{
 }
 .BMI_calc p{
     font-size: 14px;
+    line-height: 24px;
     font-weight: 400;
     color: var(--secondary);
     margin-bottom: 34px;
@@ -499,10 +500,47 @@ nav ul .bar{
     background: #383838;
     border: 1px solid transparent;
     margin: 8px 0;
+    color: rgba(255, 255, 255, 60%) !important;
+
     
-}.BMI_form input:nth-child(5){
+}
+.seperate_input select{
+    padding: 13px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 49%;
+    background: #383838;
+    border: 1px solid transparent;
+    margin: 8px 0;
+    color: rgba(255, 255, 255, 60%) !important;
+
+    
+}
+.BMI_form select{
+    padding: 13px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+    background: #383838;
+    border: 1px solid transparent;
+    margin: 8px 0;
+    color: rgba(255, 255, 255, 60%) !important;
+    appearance: none;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI0IiB2aWV3Qm94PSIwIDAgOCA0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik00LjI1IDQuNGEuNzUuNzUgMCAwMCAuNTMtLjI0bDMtM2EuNzUuNzUgMCAwMC0xLjA2LTEuMDZMNCAyLjk3IDEuMjggLjcxaC0uMDEtLjAxYS43NS43NSAwIDAwLTEuMDUgMS4wNWwzIDNhLjc1Ljc1IDAgMDAuNTIuMjJ6Ii8+PC9zdmc+');
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+    background-size: 13px 13px; 
+
+    
+}
+.BMI_form select option{
+    padding-right: 13px;
+}
+
+.BMI_form input:nth-child(5){
     width: 100%;
 }
+
 .BMI_form input::placeholder{
     font-size: 16px;
     color: rgba(255, 255, 255, 60%)
@@ -762,8 +800,7 @@ nav ul .bar{
     margin-top: 20px;
 }
 .footer_right_text p {
-    color: #dddddd;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--secondary);
     font-size: 13px;
     line-height: 24px;
     padding-left: 24px;
@@ -794,9 +831,9 @@ nav ul .bar{
     line-height: 32px;
     text-align: center;
     background: transparent;
-    border: 2px solid #fff;
+    border: 2px solid var(--secondary);
     margin-right: 5px;
-    color: #fff;
+    color: var(--secondary);
     cursor: pointer;
     transition: all linear 0.3s;
     -webkit-transition: all linear 0.3s;
